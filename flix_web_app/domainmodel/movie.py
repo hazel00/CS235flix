@@ -1,6 +1,6 @@
-from domainmodel.genre import Genre
-from domainmodel.actor import Actor
-from domainmodel.director import Director
+from flix_web_app.domainmodel.genre import Genre
+from flix_web_app.domainmodel.actor import Actor
+from flix_web_app.domainmodel.director import Director
 
 
 class Movie:
@@ -19,6 +19,8 @@ class Movie:
         self.__actors = []
         self.__genres = []
         self.__runtime_minutes = None
+        self.__id = None
+        self.__last_actor = None
 
     @property
     def title(self) -> str:
@@ -31,6 +33,18 @@ class Movie:
     @property
     def description(self) -> str:
         return self.__description
+
+    @property
+    def id(self) -> int:
+        return self.__id
+
+    @property
+    def last_actor(self):
+        return self.actors[-1]
+
+    @id.setter
+    def id(self, id: int):
+        self.__id = id
 
     @description.setter
     def description(self, description: str):

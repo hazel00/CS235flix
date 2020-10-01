@@ -12,7 +12,7 @@ class Actor:
         return self.__actor_full_name
 
     @property
-    def colleagues(self) -> str:
+    def colleagues(self) -> list:
         return self.__colleagues
 
     def __repr__(self):

@@ -1,9 +1,9 @@
 import csv
 
-from domainmodel.movie import Movie
-from domainmodel.actor import Actor
-from domainmodel.genre import Genre
-from domainmodel.director import Director
+from flix_web_app.domainmodel.movie import Movie
+from flix_web_app.domainmodel.actor import Actor
+from flix_web_app.domainmodel.genre import Genre
+from flix_web_app.domainmodel.director import Director
 
 
 class MovieFileCSVReader:
@@ -39,7 +39,9 @@ class MovieFileCSVReader:
 
                 movie_class = Movie(row['Title'], int(row['Year']))
                 if movie_class not in self.dataset_of_movies:
-                    movie_class.director = row['Director']
+                    movie_class.id = row['Rank']
+                    director = Director(row['Director'])
+                    movie_class.director = director
                     movie_class.description = row['Description']
                     for actor in row['Actors'].split(","):
                         actor_movie = Actor(actor)

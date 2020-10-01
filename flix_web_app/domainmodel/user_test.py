@@ -1,4 +1,4 @@
-from domainmodel.user import User
+from flix_web_app.domainmodel.user import User
 from domainmodel.movie import Movie
 from domainmodel.comment import Comment
 from domainmodel.watchlist import WatchList

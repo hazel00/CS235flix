@@ -1,5 +1,4 @@
 from datetime import datetime
-from domainmodel.user import User
 from domainmodel.movie import Movie
 from domainmodel.comment import Comment
 

@@ -1,7 +1,13 @@
 from flix_web_app.domainmodel.user import User
+<<<<<<< HEAD:flix_web_app/domainmodel/user_test.py
 from flix_web_app.domainmodel.movie import Movie
 from flix_web_app.domainmodel.comment import Comment
 from flix_web_app.domainmodel.watchlist import WatchList
+=======
+from domainmodel.movie import Movie
+from domainmodel.comment import Comment
+from domainmodel.watchlist import WatchList
+>>>>>>> refs/remotes/origin/master:domainmodel/user_test.py
 
 
 def test_user_comments():

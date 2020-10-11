@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 from flask import Blueprint, render_template, url_for, redirect, flash, request
 from wtforms import StringField, SelectField, SubmitField
 from flask_wtf import FlaskForm
 import flix_web_app.search.services as services
 import flix_web_app.adapters.repository as repo
+=======
+from flask import Blueprint, render_template
+
+>>>>>>> refs/remotes/origin/master
 
 search_blueprint = Blueprint('search_bp', __name__)
 
 
+<<<<<<< HEAD
 @search_blueprint.route('/search', methods=['GET', 'POST'])
 def search():
     form = MovieSearch()
@@ -62,3 +68,10 @@ class MovieSearch(FlaskForm):
     selection = SelectField('Search Movies:', choices=options)
     search = StringField('')
     submit = SubmitField('Search')
+=======
+@search_blueprint.route('/search')
+def search():
+    return render_template(
+        'search.html'
+    )
+>>>>>>> refs/remotes/origin/master

@@ -2,9 +2,12 @@ from bisect import insort_left
 
 from flix_web_app.adapters.repository import AbstractRepository
 from flix_web_app.domainmodel.movie import Movie
+<<<<<<< HEAD
 from flix_web_app.domainmodel.actor import Actor
 from flix_web_app.domainmodel.genre import Genre
 from flix_web_app.domainmodel.director import Director
+=======
+>>>>>>> refs/remotes/origin/master
 from flix_web_app.datafilereaders.movie_file_csv_reader import MovieFileCSVReader
 
 
@@ -30,6 +33,7 @@ class MemoryRepository(AbstractRepository):
     def get_ids_of_movies(self):
         return [i for i in self.__movie_index.keys()]
 
+<<<<<<< HEAD
     def get_movies_ids_by_title(self, title: str):
         movies = []
         for movie in self.__movies:
@@ -89,6 +93,8 @@ class MemoryRepository(AbstractRepository):
         real_ids = [id for id in movie_ids if id in self.__movie_index]
         return [self.__movie_index[id] for id in real_ids]
 
+=======
+>>>>>>> refs/remotes/origin/master
 
 def populate(filename, repo):
     csv = MovieFileCSVReader(filename)

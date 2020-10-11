@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from flix_web_app.datafilereaders.movie_file_csv_reader import MovieFileCSVReader
+=======
+from datafilereaders.movie_file_csv_reader import MovieFileCSVReader
+>>>>>>> refs/remotes/origin/master
 
 
 def main():

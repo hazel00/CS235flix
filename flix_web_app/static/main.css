@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    background-color: #AAE9E9;
+    font-family: 'Libre Baskerville', serif;
+    color: #264653;
+}
+
+
+#content{
+   padding-top: 50px;
+}
+
+main {
+    font-family: 'Libre Baskerville', serif;
+    color: #264653;
+}
+
+#nav {
+    color: #264653;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2A9D8F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    colour: white;
+    text-align: center;
+    padding: 30px 16px;
+    background-color: #2A9D8F;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #F4A261;
+    text-decoration: none;
+}
+
+li a:link{
+    color: #264653;
+    text-decoration: none;
+}
+
+li a:visited{
+    color: #264653;
+    text-decoration: none;
+}
+
+.but-home {
+    background-color: #E9C46A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+}
+
+.but-home:hover {
+    background-color: #F4A261;
+}
+
+.but-disabled {
+    background-color: #C0C0C0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    #opacity: 0;
+}
+

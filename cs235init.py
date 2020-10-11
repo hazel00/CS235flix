@@ -1,5 +1,5 @@
-from datafilereaders.movie_file_csv_reader import MovieFileCSVReader
-from domainmodel.user import User, Review, Movie
+from flix_web_app.datafilereaders.movie_file_csv_reader import MovieFileCSVReader
+
 
 def main():
     filename = 'datafiles/Data1000Movies.csv'

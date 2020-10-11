@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0c049be-73e2-426f-ad88-e8aac65968ac" name="Default Changelist" comment="" />
+    <list default="true" id="d0c049be-73e2-426f-ad88-e8aac65968ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/activitysimulations/watchingsimulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/adapters/memory_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/adapters/repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/home/home.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/home/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/search/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/search/search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/search/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/static/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/templates/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/templates/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/tests/test_domain_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/tests/test_memory_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/tests/test_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flix_web_app/tests/test_web_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CS235FlixSkeleton.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS235FlixSkeleton.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitysimulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/activitysimulations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitysimulations/watchingsimulation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs235init.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs235init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafilereaders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/adapters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafilereaders/movie_file_csv_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/datafilereaders/movie_file_csv_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/Data1000Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/datafiles/Data1000Movies.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/datafilereaders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/comment_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/comment_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/director.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/director.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/genre.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/genre.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/movie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/user_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/user_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/watchlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/watchlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainmodel/watchlist_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/flix_web_app/domainmodel/watchlist_test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -20,7 +70,19 @@
   </component>
   <component name="ProjectId" id="1gLGS7xFClEiozCzdANJ42uc2ya" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CS235flix" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flix_web_app" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\woodw\OneDrive\Desktop\CS235flix\flix_web_app" />
+      <recent name="C:\Users\woodw\OneDrive\Desktop\CS235flix" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\woodw\OneDrive\Desktop\CS235flix\flix_web_app" />
+      <recent name="C:\Users\woodw\OneDrive\Desktop\CS235flix" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,6 +140,9 @@
       <updated>1597886456008</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

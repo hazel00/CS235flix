@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<main>
+    <div class="form">
+        <form method="POST" action="{{ handler_url }}">
+            {{ form.selection }}
+            {{ form.search }}
+            <input type="submit" value="Search">
+        </form>
+        {% if results is none %}
+            <h2>No Results Found</h2>
+        {% endif %}
+
+    </div>
+
+
+
+</main>
+
+{% endblock %}

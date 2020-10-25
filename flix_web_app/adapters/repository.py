@@ -2,7 +2,7 @@ import abc
 
 
 from flix_web_app.domainmodel.movie import Movie
-
+from flix_web_app.domainmodel.user import User
 
 repo_instance = None
 
@@ -18,16 +18,11 @@ class AbstractRepository(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-<<<<<<< HEAD
     def get_movies_for_browse(self, id_list):
-=======
-    def get_movies_for_browse(self):
->>>>>>> refs/remotes/origin/master
         raise NotImplementedError
 
     @abc.abstractmethod
     def get_ids_of_movies(self):
-<<<<<<< HEAD
         raise NotImplementedError
 
     @abc.abstractmethod
@@ -60,6 +55,12 @@ class AbstractRepository(abc.ABC):
 
     @abc.abstractmethod
     def get_movies_by_director(self, movie_ids: list):
-=======
->>>>>>> refs/remotes/origin/master
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def add_user(self, user: User):
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def get_user(self, username):
         raise NotImplementedError

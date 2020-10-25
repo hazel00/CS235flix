@@ -16,10 +16,19 @@ class User:
         self.__comments = []
         self.__time_spent_watching_movies_minutes = 0
         self.__watchlist = None
+        self.__id = None
 
     @property
     def user_name(self) -> str:
         return self.__user_name
+
+    @property
+    def id(self) -> int:
+        return self.__id
+
+    @id.setter
+    def id(self, id: int):
+        self.__id = id
 
     @property
     def password(self) -> str:

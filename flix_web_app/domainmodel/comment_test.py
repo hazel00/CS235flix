@@ -1,11 +1,8 @@
 from datetime import datetime
-<<<<<<< HEAD:flix_web_app/domainmodel/comment_test.py
+
 from flix_web_app.domainmodel.movie import Movie
 from flix_web_app.domainmodel.comment import Comment
-=======
-from domainmodel.movie import Movie
-from domainmodel.comment import Comment
->>>>>>> refs/remotes/origin/master:domainmodel/comment_test.py
+
 
 
 def test_comment_init():

@@ -4,6 +4,7 @@ from flix_web_app.domainmodel.movie import Movie
 from flix_web_app.domainmodel.actor import Actor
 from flix_web_app.domainmodel.genre import Genre
 from flix_web_app.domainmodel.director import Director
+from flix_web_app.domainmodel.user import User
 
 
 class MovieFileCSVReader:
@@ -14,6 +15,7 @@ class MovieFileCSVReader:
         self.__dataset_of_actors = set()
         self.__dataset_of_movies = []
         self.__dataset_of_genres = set()
+        self.__dataset_of_users = set()
 
     @property
     def dataset_of_actors(self):
@@ -31,6 +33,18 @@ class MovieFileCSVReader:
     def dataset_of_genres(self):
         return self.__dataset_of_genres
 
+    @property
+    def dataset_of_users(self):
+        return self.__dataset_of_users
+
+    def read_user_csv_file(self):
+        with open(self.__file_name, mode='r', encoding='utf-8-sig') as csvfile:
+            user_file_reader = csv.DictReader(csvfile)
+
+            for row in user_file_reader:
+                user_class = User(row['username'], row['password'])
+                user_class.id = int(row['id'])
+
     def read_csv_file(self):
         with open(self.__file_name, mode='r', encoding='utf-8-sig') as csvfile:
             movie_file_reader = csv.DictReader(csvfile)
@@ -39,7 +53,7 @@ class MovieFileCSVReader:
 
                 movie_class = Movie(row['Title'], int(row['Year']))
                 if movie_class not in self.dataset_of_movies:
-                    movie_class.id = row['Rank']
+                    movie_class.id = int(row['Rank'])
                     director = Director(row['Director'])
                     movie_class.director = director
                     movie_class.description = row['Description']
@@ -65,3 +79,4 @@ class MovieFileCSVReader:
                     genre_class = Genre(genre)
                     if genre_class not in self.dataset_of_genres:
                         self.dataset_of_genres.add(genre_class)
+
